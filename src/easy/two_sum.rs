@@ -17,6 +17,7 @@ pub fn run(nums: Vec<i32>, target: i32) -> Vec<i32> {
     unreachable!("How did we get here?");
 }
 
+// O(n)
 pub fn run_improved(nums: Vec<i32>, target: i32) -> Vec<i32> {
     let mut search_dict: HashMap<i32, i32> = HashMap::new();
 
