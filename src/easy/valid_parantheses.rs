@@ -26,9 +26,11 @@ mod tests {
         let test1 = "()[]{}".to_string();
         let test2 = "(]".to_string();
         let test3 = "([({})])".to_string();
+        let test4 = "{]}[".to_string();
 
         assert_eq!(valid_parentheses(test1), true);
         assert_eq!(valid_parentheses(test2), false);
         assert_eq!(valid_parentheses(test3), true);
+        assert_eq!(valid_parentheses(test4), false);
     }
 }
