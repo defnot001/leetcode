@@ -1,8 +1,16 @@
 mod easy;
 
 fn main() {
-    let arr = vec![2, 7, 11, 15, 2, 5, 7, 3];
-    let target = 18;
+    let strs = vec![
+        "flower".to_string(),
+        "flow".to_string(),
+        "flight".to_string(),
+    ];
 
-    println!("{:#?}", easy::two_sum::run_improved(arr, target));
+    let strs2 = vec!["dog".to_string(), "racecar".to_string(), "car".to_string()];
+
+    println!(
+        "{:#?}",
+        easy::longest_common_prefix::longest_common_prefix(strs2)
+    );
 }
